@@ -36,33 +36,3 @@ incremento++;
 //Exponencial (**)
 
 // console.log(2**3);
-
-//operadores logicos
-
-let op1 = true;
-let op2 = false;
-// console.log(op1&&op2);
-
-//OPERADOR E (&&)
-op2=true;
-op1=true;
-// console.log(op1&&op2);
-
-//OPERADOR or (||)
-op1=true;
-op2=false;
-// console.log(op1||op2);
-
-//OPERADOR not
-op1=true;
-// console.log(!op1);
-
-//VERIFICAR INTERVALO
-let numero = 10;
-// console.log(numero > 5);
-
-
-//IGUALDADE
-// console.log(1 =='1');
-
-// console.log(1 === '1');
