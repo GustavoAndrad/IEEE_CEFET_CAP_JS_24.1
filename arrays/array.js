@@ -1,6 +1,6 @@
 //Arrays/vetores são estrutura de dados que permite armazenar vários valores em uma única variável. 
 //Esses valores podem ser qualquer tipo de dado, mas não é aconselhavel
-//Se uma variável é um caiza, um array é uma estante com varias caixas
+//Se uma variável é um caixa, um array é uma estante com varias caixas. Damos nome pra estante e números pras caixas.
 //Cada espaço de um array tem um endereço, começanco com 0
 
 /*  OPERAÇÕES DE MANIPULAÇÃO
@@ -15,10 +15,16 @@
 */
 
 //ACESSANDO ARRAYS
-let frutas = ["Maçã", "Banana", "Morango"]
+let frutas = ["Maçã", "Banana", "Morango"];
 
-console.log(frutas)
-console.log(frutas[0])
+console.log(frutas);
+console.log(frutas[0]);
+
+console.log(frutas.indexOf("Maçã"));
+console.log(frutas.includes("Ovo"));
+console.log(frutas.join(" --- "));
+console.log(frutas.sort());
+console.log(frutas.length);
 
 let pessoas = [
     {
@@ -29,36 +35,38 @@ let pessoas = [
         nome: "Caio",
         idade: 20,
     },
-]
+];
 
-console.log(pessoas[1].nome)
+console.log(pessoas[1].nome);
 
+let funcoes = [function oi(){ return "oi" }, function tchau(){ return "tchau" }];
+console.log(funcoes[1]());
 
 //OPERANDO ARRAYS
-let numeros = [0, 1, 2, 3];
-console.log(numeros) //  0 1 2 3
+const numeros = [0, 1, 2, 3];
+console.log(numeros); //  0 1 2 3
 
-numeros.push(4)
-console.log(numeros) // 0 1 2 3 4 
+numeros.push(4);
+console.log(numeros); // 0 1 2 3 4 
 
-numeros.unshift(-1)
-console.log(numeros) // -1 0 1 2 3 4
+numeros.unshift(-1);
+console.log(numeros); // -1 0 1 2 3 4
 
-numeros.pop()
-console.log(numeros) // -1 0 1 2 3
+numeros.pop();
+console.log(numeros); // -1 0 1 2 3
 
-numeros.shift()
-console.log(numeros) // 0 1 2 3
+numeros.shift();
+console.log(numeros); // 0 1 2 3
 
-console.log(numeros.slice(0,2)) // mostra o array recortado de 0 até 1   mostra  [0  1]
+console.log(numeros.slice(0,2)); // mostra o array recortado de 0 até 1   mostra  [0  1]
 
-numeros.splice(0,2) //remove os elementso de 0 até 1     fica [2, 3]
-console.log(numeros)
-
-
+numeros.splice(0,2); //remove os elementso de 0 até 1     fica [2, 3]
+console.log(numeros);
 
 
-const numeros2 = [0 ,1 ,2, 3]
+
+
+const numeros2 = [0 ,1 ,2, 3];
 
 //para cada elemento faz alguma coisa
 numeros2.forEach((numero)=>{console.log(numero)});
@@ -67,17 +75,17 @@ numeros2.forEach((numero)=>{console.log(numero)});
 let numeros_grandes = numeros2.filter((numero)=>{return numero>1});
 console.log(numeros_grandes);
 
-//percorre e faz alguma alteração. Não modifica, cria uma lista nova
+//percorre e gera um array novo usando os elementso do outro como base.
 let numeros_somados = numeros2.map((numero)=>{return numero+=1});
-console.log(numeros_somados)
+console.log(numeros_somados);
 
     //repare que a lista original não foi alterada
-    console.log(numeros2)
+    console.log(numeros2);
 
 //reduz o array a um valor
 let soma = numeros2.reduce((a, b)=>{return a+b}, 0);
     //a é o acumulador, b o item e 0 em que valor o acumulador irá começar 
-console.log(soma)
+console.log(soma);
 
 
 
@@ -90,8 +98,9 @@ let matriz = [
     [7,8,9]
     ]
 
-console.log(matriz[0])
-console.log(matriz[0][2])
+console.log(matriz[0]);
+console.log(matriz[0][2]);
 
-matriz.push(1)
-console.log(matriz)
+matriz.push(1);
+matriz.push([10,11,12]);
+console.log(matriz);

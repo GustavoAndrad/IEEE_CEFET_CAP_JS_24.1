@@ -1,6 +1,6 @@
-//Quando programamos preciasamos de lugares para guardar valores.
+// Quando programamos preciasamos de lugares para guardar valores.
 // Variáveis: pense em variáveis como caixinhas com um nome que guardam alguma coisa. 
-//Tecnicamente quando criamos uma, estamos reservando um espaço na memória para um conteúdo.
+// Tecnicamente quando criamos uma, estamos reservando um espaço na memória para um conteúdo.
 
 
 // Nomes de variáveis
@@ -24,7 +24,7 @@
 
 //VAR
 
-var y = 0
+var y = 0;
 {
     var x = 0;
     x=10;
@@ -38,7 +38,7 @@ console.log(y);
 {
     let x = 10;
     x = 0;
-  console.log(x);
+    console.log(x);
 }
 
 
@@ -48,7 +48,6 @@ console.log(y);
     const pi = 3.141592;
     console.log(pi);
 }
-
 
 //PRINCIPAIS TIPOS DE DADOS
 //diferente de tipo de variável
