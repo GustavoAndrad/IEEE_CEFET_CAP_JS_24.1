@@ -1,4 +1,4 @@
-//Controlar pra onde o fluxo de exucução do pugrama vai
+//Controlar pra onde o fluxo de exucução do programa vai
 
 
 //IF E ELSES
@@ -40,7 +40,7 @@ switch (numero_switch){
 }
 
 //OPERADOR TERNÁRIO
-//condição ? se true ; se false
+//condição ? se true : se false
 
 const aconteceu = false;
 aconteceu ? console.log("Aconteceu") : console.log("Não aconteceu");
